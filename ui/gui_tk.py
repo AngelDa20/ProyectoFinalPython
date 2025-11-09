@@ -413,10 +413,15 @@ class RobotGUI(tk.Tk):
                 #current_pos = T[:3, 3]
                 #target_pos = current_pos + dx
                 target_pos = self.ee_target.copy()
+
+                # >>> PARCHE: reflejar SOLO el delta Z respecto a la medición actual | Corrección
+                # (equivalente a: target_pos[2] = ee_meas[2] - (target_pos[2] - ee_meas[2]))
+                target_pos[2] = 2.0 * ee_meas[2] - target_pos[2]
+
                 sols = self.model.ik_solver(self.model, target_pos)
                 if sols:
                     q_new = sols[0]
-                    self.q += 0.3 * (q_new - self.q)  # suavizado para evitar vibración
+                    self.q += 0.5 * (q_new - self.q)  # suavizado para evitar vibración
             else:
                 # DLS por defecto (estable e incremental)
                 self.q = ik_step_dls(self.model, self.q, dx_mm=dx, lam=self.lam.get())

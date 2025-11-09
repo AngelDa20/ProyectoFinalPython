@@ -5,13 +5,13 @@ Alumno: Angel Gamarra.
 Este proyecto integra los conocimientos obtenidos durante el diplomado de Python.
 Consiste en un simulador interactivo del brazo robótico **Mitsubishi RV-M2** (5 grados de libertad), desarrollado en **Python** utilizando **NumPy**, **Matplotlib**, **Tkinter** y **Pandas** para el manejo de datos del modelo cinemático.
 
-El sistema permite **visualizar y controlar el movimiento del efector final (tool)** del robot mediante una interfaz gráfica con palancas virtuales (tipo joystick) y control de parámetros dinámicos.  
+El sistema permite **visualizar y controlar el movimiento del efector final (tool)** del robot mediante una interfaz gráfica con palancas virtuales y control de parámetros dinámicos.  
 
 ---
 
 ## Estructura del Proyecto
 ```bash
-Proyecto_Final_Python/
+ProyectoFinalPython/
 │
 ├── config_csv/ # Archivos de configuración del modelo
 │ ├── base.csv # Matriz base del robot

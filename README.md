@@ -1,6 +1,7 @@
 # Proyecto Final Python | Simulador de un brazo robot de 5 GDL (RV-M2)
 ## Diplomado de Programación en Python Especializado para Ingenieros
 Alumno: Angel Gamarra.
+
 Este proyecto integra los conocimientos obtenidos durante el diplomado de Python.
 Consiste en un simulador interactivo del brazo robótico **Mitsubishi RV-M2** (5 grados de libertad), desarrollado en **Python** utilizando **NumPy**, **Matplotlib**, **Tkinter** y **Pandas** para el manejo de datos del modelo cinemático.
 
@@ -9,7 +10,7 @@ El sistema permite **visualizar y controlar el movimiento del efector final (too
 ---
 
 ## Estructura del Proyecto
-
+```bash
 Proyecto_Final_Python/
 │
 ├── config_csv/ # Archivos de configuración del modelo
@@ -35,6 +36,7 @@ Proyecto_Final_Python/
 ├── requirements.txt # Dependencias del entorno (NumPy, Tkinter, etc.)
 ├── README.md # Documentación del proyecto
 └── LICENSE # Licencia del proyecto
+```
 
 ---
 
